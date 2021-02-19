@@ -3,4 +3,10 @@
 /* aqui vamos definir que todos os elementos (que é *) tenham margem = 0 */
 * {
     margin: 0;
+    border: none;
+}
+
+/* todo conteúdo na tag body utilizará a fonte Verdana, se não tiver.. utilizará sans-serif */ 
+body {
+    font-family: 'Verdana', sans-serif;
 }
