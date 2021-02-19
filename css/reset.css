@@ -1,0 +1,6 @@
+/* Este arquivo vai resetar todas as configurações padrão dos elementos da webapp, por padrão os navegadores incluem margens, padding etc.. quando não definimos ao criar o elemento. Aqui tudo será resetado */
+
+/* aqui vamos definir que todos os elementos (que é *) tenham margem = 0 */
+* {
+    margin: 0;
+}

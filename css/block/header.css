@@ -1,0 +1,6 @@
+/* Aqui vamos tratar do estilo do cabeçalho da Webapp, Está na pasta block por tratar de um bloco da página */
+
+/* estamos pegando a CLASSE chamada header */
+.header { 
+    background-color: #51B0DC;
+}
