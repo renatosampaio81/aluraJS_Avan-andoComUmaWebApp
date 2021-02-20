@@ -1,0 +1,5 @@
+/* Na base vamos definir as configurações referentes a janela do navegador */
+
+.container {
+    padding: 0 10%; /*a margem interna do cabecalho de cima e baixo é zero, as da direita e esquera são de 10% do tamanho da largura da janela */
+}

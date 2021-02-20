@@ -10,3 +10,10 @@
 body {
     font-family: 'Verdana', sans-serif;
 }
+
+/* a é um link */
+a {
+    color: inherit; /* inherit pega a cor do pai */
+    text-decoration: none; /* tira o sublinhado do link */
+    
+}

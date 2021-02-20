@@ -2,13 +2,36 @@
 
 /* estamos pegando a CLASSE chamada header */
 .header { 
-    background-color: #51B0DC;
+    background-color: #0082c7;
+    height: 40px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .header-title { 
     color: #B3DAEE;
+    display: inline;
+    /* por padrao, o valor do display de h1 é Block, assim fica apenas o conteúdo de h1 em uma linha, os botoes pulam pra outra linha. Vou mudar para inline, assim os próximos elementos, que são os botões, ficam ao lado de h1 (o padrao para os botoes é inline)*/
+    vertical-align: middle;
+    
+}
+
+.header-menu {
+    float: right; /* deixa o conteúdo da navegação flutuando e joga pra direita */
+}
+
+.header-button:first-child { /* o primeiro header-button (linhas) terá um comportamento diferente */
+    margin-right: 15px; /* vai criar uma margem direita externa, pra separar um pouco os botoes */
 }
 
 .header-button {
     background-color: #006195;
+    font-size: 16px;
+    color: #FFF;
+    box-sizing: content-box; 
+    /* border-box é o valor padrão do box-sizing, e nele o padding é considerado para considerar a altura final do elemento. Ou seja, se eu defino height de 22 e padding de 8, a altura final será 22, não será acrecido a margem interna na altura final */
+    /* alterando pra content-box, o height passa a não considerar o padding, ou seja, o valor final da altura será o somatório dos height + padding */
+    height: 22px; /* altura da caixa */
+    padding: 8px; /* margens internas */
+    display: inline-block;
 }
