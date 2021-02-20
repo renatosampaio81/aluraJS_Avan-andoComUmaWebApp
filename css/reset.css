@@ -15,5 +15,10 @@ body {
 a {
     color: inherit; /* inherit pega a cor do pai */
     text-decoration: none; /* tira o sublinhado do link */
-    
+
+}
+
+/* todas as listas */
+ol, ul, li {
+    list-style: none; /* remove os estilos da lista (1. 2. 3., a. b. c., etc...)
 }
