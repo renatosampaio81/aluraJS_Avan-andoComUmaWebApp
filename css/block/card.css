@@ -1,11 +1,26 @@
 /* Estilos dos cartões */
 
 .card {
-    background-color: #BEBF40;
     display: inline-block; /* em fila mas cada elemento como um bloco */
     box-sizing: border-box;
     /* aqui eu escolho border-box porque eu quero que o padding seja considerado pro width, ou seja, não é 25% da pagina + padding o tamanho do card, e sim 25% de largura do card considerando margem e padding */
     padding: 16px;
     width: 25%; /* a largura de cada card será 25% da largura da janela */
         
+}
+
+.card_colorFirst {
+    background-color: #45AAEE;
+}
+
+.card_colorSecond {
+    background-color: #FF1010;
+}
+
+.card_colorThird {
+    background-color: #76EF40;
+}
+
+.card_colorFourth {
+    background-color: #EBEF40;
 }
