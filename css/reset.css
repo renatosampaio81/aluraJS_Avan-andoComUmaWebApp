@@ -4,6 +4,7 @@
 * {
     margin: 0;
     border: none;
+    padding: 0;
 }
 
 /* todo conteúdo na tag body utilizará a fonte Verdana, se não tiver.. utilizará sans-serif */ 
@@ -20,5 +21,5 @@ a {
 
 /* todas as listas */
 ol, ul, li {
-    list-style: none; /* remove os estilos da lista (1. 2. 3., a. b. c., etc...)
+    list-style: none; /* remove os estilos da lista (1. 2. 3., a. b. c., etc...) */
 }
