@@ -10,12 +10,16 @@
 }
 
 .bolinha {
+    display: inline-block; /* somente inline as bolinhas perderiam seu padrao de altura e largura */
     width: 32px;
     height: 32px;
-    text-indent: -999px; /* esconde o texto da bolinha, a esquerda */
+    text-indent: -9999px; /* esconde o texto da bolinha, a esquerda */
     overflow: hidden; /* mesmo se o texto nao fosse escondido, ele nao ultrapassaria o tamanho da bolinha */
     border-radius: 50%; /* transforma o quadrado em uma bolinha */
-}
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    /* borda da bolinha de 2px de espessura, solida, preta e 0.5 de transparencia */
+
+}    
 
 /* O Grupo abaixo são os cards */
 .card_colorFirst {
