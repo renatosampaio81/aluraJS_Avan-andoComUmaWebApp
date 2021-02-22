@@ -6,7 +6,15 @@
     /* aqui eu escolho border-box porque eu quero que o padding seja considerado pro width, ou seja, não é 25% da pagina + padding o tamanho do card, e sim 25% de largura do card considerando margem e padding */
     padding: 16px;
     width: 25%; /* a largura de cada card será 25% da largura da janela */
-        
+    position: relative; 
+    /* o padrao é static, agora como relative as bolinhas que são absolute ficarãom presas aqui dentro */    
+}
+
+.wrap-bolinhas { /* o termo wrap = empacotador */
+    position: absolute; 
+    /* a posição absoluta tira as bolinhas de dentro da nav, mas eu quero que a posicao delas respeitam o pai, que é o card (o li), então vou definir li como relative (o padrão é static, se o position for static as bolinhas não vao respeitar o pai) */
+    top: -16px;
+    left: 0; 
 }
 
 .bolinha {
@@ -39,18 +47,18 @@
 }
 
 /* O Grupo abaixo são os modificadores das bolinhas de cores que ficam em cada card */
-.bolinha_card_colorFirst {
+.bolinha_colorFirst {
     background-color: #45AAEE;
 }
 
-.bolinha_card_colorSecond {
+.bolinha_colorSecond {
     background-color: #FF1010;
 }
 
-.bolinha_card_colorThird {
+.bolinha_colorThird {
     background-color: #76EF40;
 }
 
-.bolinha_card_colorFourth {
+.bolinha_colorFourth {
     background-color: #EBEF40;
 }
