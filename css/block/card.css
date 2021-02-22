@@ -9,6 +9,15 @@
         
 }
 
+.bolinha {
+    width: 32px;
+    height: 32px;
+    text-indent: -999px; /* esconde o texto da bolinha, a esquerda */
+    overflow: hidden; /* mesmo se o texto nao fosse escondido, ele nao ultrapassaria o tamanho da bolinha */
+    border-radius: 50%; /* transforma o quadrado em uma bolinha */
+}
+
+/* O Grupo abaixo são os cards */
 .card_colorFirst {
     background-color: #45AAEE;
 }
@@ -22,5 +31,22 @@
 }
 
 .card_colorFourth {
+    background-color: #EBEF40;
+}
+
+/* O Grupo abaixo são os modificadores das bolinhas de cores que ficam em cada card */
+.bolinha_card_colorFirst {
+    background-color: #45AAEE;
+}
+
+.bolinha_card_colorSecond {
+    background-color: #FF1010;
+}
+
+.bolinha_card_colorThird {
+    background-color: #76EF40;
+}
+
+.bolinha_card_colorFourth {
     background-color: #EBEF40;
 }
