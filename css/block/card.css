@@ -1,5 +1,22 @@
 /* Estilos dos cartões */
 
+/* O Grupo abaixo são as cores dos cards */
+[data-cardColor = first] { /* O colchetes indica que estamos pegando um atributo criado por mim */
+    background-color: #45AAEE;
+}
+
+[data-cardColor = second] {
+    background-color: #FF1010;
+}
+
+[data-cardColor = third]  {
+    background-color: #76EF40;
+}
+
+[data-cardColor = fourth] {
+    background-color: #EBEF40;
+}
+
 .card {
     display: inline-block; /* em fila mas cada elemento como um bloco */
     box-sizing: border-box;
@@ -27,38 +44,4 @@
     border: 2px solid rgba(0, 0, 0, 0.5);
     /* borda da bolinha de 2px de espessura, solida, preta e 0.5 de transparencia */
 
-}    
-
-/* O Grupo abaixo são os cards */
-.card_colorFirst {
-    background-color: #45AAEE;
-}
-
-.card_colorSecond {
-    background-color: #FF1010;
-}
-
-.card_colorThird {
-    background-color: #76EF40;
-}
-
-.card_colorFourth {
-    background-color: #EBEF40;
-}
-
-/* O Grupo abaixo são os modificadores das bolinhas de cores que ficam em cada card */
-.bolinha_colorFirst {
-    background-color: #45AAEE;
-}
-
-.bolinha_colorSecond {
-    background-color: #FF1010;
-}
-
-.bolinha_colorThird {
-    background-color: #76EF40;
-}
-
-.bolinha_colorFourth {
-    background-color: #EBEF40;
 }
