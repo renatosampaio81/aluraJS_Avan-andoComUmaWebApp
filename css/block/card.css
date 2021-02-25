@@ -36,6 +36,7 @@
 
 .bolinha {
     display: inline-block; /* somente inline as bolinhas perderiam seu padrao de altura e largura */
+    box-sizing: border-box; /* como eu quero que a borda faça parte do tamanho final do elemento (para terem o mesmo tamanho com borda mais grossa ou nao) eu defino para border-box */
     width: 32px;
     height: 32px;
     text-indent: -9999px; /* esconde o texto da bolinha, a esquerda */
@@ -44,4 +45,8 @@
     border: 2px solid rgba(0, 0, 0, 0.5);
     /* borda da bolinha de 2px de espessura, solida, preta e 0.5 de transparencia */
 
+}
+
+.bolinha .isActive { /* aqui estou pegando a bolinha que ganhou a classe isActive porque foi clicada */
+    border-width: 4px; /* a borda da bolinha que era 2px vira 4px */
 }
