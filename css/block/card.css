@@ -31,7 +31,7 @@
     position: absolute; 
     /* a posição absoluta tira as bolinhas de dentro da nav, mas eu quero que a posicao delas respeitam o pai, que é o card (o li), então vou definir li como relative (o padrão é static, se o position for static as bolinhas não vao respeitar o pai) */
     top: -16px;
-    left: 0; 
+    left: 0;
 }
 
 .bolinha {
@@ -44,7 +44,7 @@
     border-radius: 50%; /* transforma o quadrado em uma bolinha */
     border: 2px solid rgba(0, 0, 0, 0.5);
     /* borda da bolinha de 2px de espessura, solida, preta e 0.5 de transparencia */
-
+    margin-right: -5px;
 }
 
 .card_delete {
@@ -53,6 +53,16 @@
     background-size: 70%;
     background-position: center;
     background-color: #FFF;
+    margin-right: 15px;
+}
+
+.card_edit {
+    background-image: url("../../images/edit.svg");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-color: #FFF;
+    margin-right: 0px;
 }
 
 .bolinha.isActive { /* aqui estou pegando a bolinha que ganhou a classe isActive porque foi clicada */
