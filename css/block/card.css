@@ -47,6 +47,6 @@
 
 }
 
-.bolinha .isActive { /* aqui estou pegando a bolinha que ganhou a classe isActive porque foi clicada */
+.bolinha.isActive { /* aqui estou pegando a bolinha que ganhou a classe isActive porque foi clicada */
     border-width: 4px; /* a borda da bolinha que era 2px vira 4px */
 }
