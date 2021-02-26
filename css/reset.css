@@ -5,6 +5,7 @@
     margin: 0;
     border: none;
     padding: 0;
+    outline: none; /* outline é aquela linha que fica em volta do texto quando vou editar um card */
 }
 
 /* todo conteúdo na tag body utilizará a fonte Verdana, se não tiver.. utilizará sans-serif */ 

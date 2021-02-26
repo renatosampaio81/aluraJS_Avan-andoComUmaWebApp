@@ -65,6 +65,10 @@
     margin-right: 0px;
 }
 
+.card-content[contenteditable="true"] { /* quando o parágrafo estiver em estado de edição */
+    outline: 2px dashed rgba(0, 0, 0, 0.5); /* outline é a linha que fica ao redor do text quando está sendo editado e dashed é o estilo do contorno (pontilhado */
+}
+
 .bolinha.isActive { /* aqui estou pegando a bolinha que ganhou a classe isActive porque foi clicada */
     border-width: 4px; /* a borda da bolinha que era 2px vira 4px */
 }

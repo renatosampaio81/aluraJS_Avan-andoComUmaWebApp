@@ -7,6 +7,7 @@ for (let index = 0; index < $cards.length; index++) { // percorre todos os cards
     $cards[index].addEventListener('click', function(){ // coloquei uma escuta em todos cards, quando clicarem vai rodar a function
         var $this = event.target; // o event.target traz o elemento que foi clicado dentro do target, no caso queremos as bolinhas de seleção de cor
         var $card = this // this é o card
+        var $cardContent = $card.querySelector('.card-content'); // estou buscando o parágrafo
 
         if ($this.dataset.cardcolor) { // verifica se o objeto clicado tem a a propriedade dataColor. Se não for ele vai ignorar a rotina abaixo
 
@@ -21,6 +22,11 @@ for (let index = 0; index < $cards.length; index++) { // percorre todos os cards
 
         if ($this.classList.contains('card_delete')) { //verifica se o objeto clicado tem a a classe card_delete. Se não for ele vai ignorar a rotina abaixo
             $card.remove();
+        }
+
+        if ($this.classList.contains('card_edit')) { //verifica se o objeto clicado tem a a classe card_delete. Se não for ele vai ignorar a rotina abaixo
+            $cardContent.setAttribute('contenteditable', 'true' ); // setAttribute altera um atributo de uma tag, aqui estou pegando o contenteditable, que define se o parágrafo pode ou nao ser editável.
+            $cardContent.focus(); // quando eu clicar no editar ele joga o foco pra dentro do texto 
         }
     });
 }
