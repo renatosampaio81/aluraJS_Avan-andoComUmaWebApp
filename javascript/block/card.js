@@ -24,9 +24,16 @@ for (let index = 0; index < $cards.length; index++) { // percorre todos os cards
             $card.remove();
         }
 
-        if ($this.classList.contains('card_edit')) { //verifica se o objeto clicado tem a a classe card_delete. Se não for ele vai ignorar a rotina abaixo
-            $cardContent.setAttribute('contenteditable', 'true' ); // setAttribute altera um atributo de uma tag, aqui estou pegando o contenteditable, que define se o parágrafo pode ou nao ser editável.
-            $cardContent.focus(); // quando eu clicar no editar ele joga o foco pra dentro do texto 
+        if ($this.classList.contains('card_edit')) { //verifica se o objeto clicado tem a a classe card_edit. Se não for ele vai ignorar a rotina abaixo
+            if ($cardContent.getAttribute('contenteditable') == 'false') { // verifica se o atributo contenteditable do objeto parágrafo está setado como falso
+                $cardContent.setAttribute('contenteditable', 'true' ); // setAttribute altera um atributo de uma tag, aqui estou pegando o contenteditable, que define se o parágrafo pode ou nao ser editável.
+                $cardContent.focus(); // quando eu clicar no editar ele joga o foco pra dentro do texto 
+                $this.classList.add('isActive');
+            } else {
+                $cardContent.setAttribute('contenteditable', 'false' );
+                $cardContent.blur(); //blur é o in verso do focus, ele retira o foco
+                $this.classList.remove('isActive');
+            }  
         }
     });
 }

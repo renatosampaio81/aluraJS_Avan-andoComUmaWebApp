@@ -45,6 +45,7 @@
     border: 2px solid rgba(0, 0, 0, 0.5);
     /* borda da bolinha de 2px de espessura, solida, preta e 0.5 de transparencia */
     margin-right: -5px;
+    cursor: pointer; /* o cursor vira uma mao quando passa por cima do objeto */
 }
 
 .card_delete {
