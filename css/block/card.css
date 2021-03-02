@@ -32,7 +32,13 @@
     /* a posição absoluta tira as bolinhas de dentro da nav, mas eu quero que a posicao delas respeitam o pai, que é o card (o li), então vou definir li como relative (o padrão é static, se o position for static as bolinhas não vao respeitar o pai) */
     top: -16px;
     left: 0;
+    opacity: 0; /* defino o objeto como opaco para ocultar ele */
+    transition: opacity 0.3s linear; /*defino a uma transição de 0.3 segundos pra toda vez que a propriedade opacity for acionada*/
 }
+
+.card:hover .wrap-bolinhas { /* quando passar o mouse por cima do CARD (hover) o menu bolinhas tem as seguintes ações abaixo */
+    opacity: 1;
+}    
 
 .bolinha {
     display: inline-block; /* somente inline as bolinhas perderiam seu padrao de altura e largura */
