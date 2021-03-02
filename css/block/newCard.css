@@ -1,0 +1,28 @@
+/* Estilo do Form que adicionará novos cards */
+
+.newCard {
+    background-color: rgb(197, 197, 197);
+    padding: 24px 127px;
+    margin-bottom: 40px;
+}
+
+.newCard-content {
+    display: block; /* porque eu quero cada objeto em uma linha diferente */
+    margin-left: auto;
+    margin-right: auto;
+    width: 560px;
+    height: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.newCard-action {
+    display: block; /* somente como block eu consigo usar o margon left e right para centralizar */
+    font-size: 16px;
+    width: 84px;
+    height: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #8272C7;
+}
+
