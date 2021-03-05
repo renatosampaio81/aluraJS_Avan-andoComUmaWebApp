@@ -5,6 +5,15 @@ var $newCard = document.querySelector('.newCard');
 var $newCardContent = document.querySelector('.newCard-content');
 var $newCardAction = document.querySelector('.newCard-action');
 
+$newCardContent.addEventListener('input', function(){ //fica ouvindo a entrada de dados (input) do carmpo textarea, e na alteração executa a função
+    //console.log('ouvindo')
+    var $error = document.querySelector('.error');
+
+    if ($error != null) { // se existe mensagem de erro, executa
+        $error.remove(); // remove a mensagem de erro
+    };
+});
+
 $newCard.addEventListener('submit',function(event) { // fica ouvindo o newcard, ao executar o submit ele executa a função
     if ($newCardContent.value == '') { //se o form de criação de card estiver vazio
         event.preventDefault(); //evita o comportamento padrao de enviar o formulário ao clicar em submit
@@ -19,7 +28,7 @@ $newCard.addEventListener('submit',function(event) { // fica ouvindo o newcard, 
             $newCard.insertBefore($error, $newCardAction);
             // insere lá no html o span que foi criado ANTES do botao submit (que lá é um input)
             // IMPORTANTE, o insertBefore tem que ser uma propriedade do pai do input, que no caso é o form (newcard) 
-        }
-    }
-})
+        };
+    };
+});
 
