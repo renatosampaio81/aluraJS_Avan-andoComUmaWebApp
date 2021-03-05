@@ -13,7 +13,15 @@
     width: 560px;
     height: 20px;
     padding: 10px;
-    margin-bottom: 20px;
+    border: 1px solid #FFF;
+    transition: height 0.2s linear, /* estou criando uma transição pra altura e borda, pra sempre que ela for alterada */
+                border 0.5s linear;
+    /* pra ocorrer a transição os elementos precisam estar declarados nos 2 objetos (no caso no textarea e no textarea:focus */
+}
+
+.newCard-content:focus { /* quando o textarea ganhar o foco, ele aplica o estilo */
+    height: 150px;
+    border: 1px solid #555;
 }
 
 .newCard-action {
@@ -25,5 +33,6 @@
     margin-right: auto;
     background-color: #8272C7;
     cursor: pointer;
+    margin-top: 20px;
 }
 

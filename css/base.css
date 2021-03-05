@@ -3,3 +3,9 @@
 .container {
     padding: 0 10%; /*a margem interna do cabecalho de cima e baixo é zero, as da direita e esquera são de 10% do tamanho da largura da janela */
 }
+
+.error {
+    display: block; /* span é inline por padrão, eu só consigo centralizar com text align ele sendo um bloco */
+    color: #FF1010;
+    text-align: center;
+}
